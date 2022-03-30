@@ -5,16 +5,18 @@ import Filtro from './components/filtro';
 
 
 
-class App extends React.Component{
+class LabECommerce extends React.Component() {
   render(){
     return(
      
       <div>
-      <Filtro />
+        <h1>dale</h1>
+      <Filtro/>
       
       
     
-
+      
+      
       </div>
 
 
@@ -23,4 +25,4 @@ class App extends React.Component{
  
 }
 
-export default App
+export default LabECommerce
