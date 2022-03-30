@@ -10,11 +10,13 @@ class App extends React.Component{
     return(
      
       <div>
+       oi oi oi
       <Filtro />
       
       
     
-
+      
+      
       </div>
 
 

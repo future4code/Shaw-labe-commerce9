@@ -29,22 +29,21 @@ export default class Filtro extends React.Component {
         inputValorMax: '',
         inputBuscaNome: '',
     }
-
     onChangeFilterMin = (event) => {
         this.setState({
-            inputValorMin: this.event.value
+            inputValorMin: this.event.value,
           
         })
     }
     onChangeFilterMax = (event) => {
         this.setState({
-            inputValorMax: this.event.value
+            inputValorMax: this.event.value,
           
         })
     }
     onChangeFilterBuscaNome = (event) => {
         this.setState({
-            inputValorBuscaNome: this.event.value
+            inputValorBuscaNome: this.event.value,
           
         })
     }

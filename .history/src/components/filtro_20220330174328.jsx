@@ -22,33 +22,24 @@ input{
 `
 
 
+
+
+
+
 export default class Filtro extends React.Component {
 
     state = {
-        inputValorMin: '',
-        inputValorMax: '',
-        inputBuscaNome: '',
+        inputValorMin: 200,
+        inputValorMax: 500,
+        inputBuscaNome: "Nave Mãe",
     }
-
-    onChangeFilterMin = (event) => {
+    onChangeFilter = (event) => {
         this.setState({
-            inputValorMin: this.event.value
-          
+            inputValorMin: this.event.value,
+            inputValorMax: this.event.value,
+            inputBuscaNome: this.event.value
         })
     }
-    onChangeFilterMax = (event) => {
-        this.setState({
-            inputValorMax: this.event.value
-          
-        })
-    }
-    onChangeFilterBuscaNome = (event) => {
-        this.setState({
-            inputValorBuscaNome: this.event.value
-          
-        })
-    }
-
 
 
     render() {
@@ -59,11 +50,11 @@ export default class Filtro extends React.Component {
 
                 <h2>Filtros</h2>
                 <p>Valor mínimo: </p>
-                <input type="number" value={this.state.inputValorMin.value} onChange={''}/>
+                <input type="number" value={this.state.inputValorMin} onChange={this.onChangeFilter}/>
                 <p>Valor Máximo: </p>
-                <input type="number" value={this.state.inputValorMax.value} onChange={''}/>
+                <input type="number" value={this.state.inputValorMax} onChange={this.onChangeFilter}/>
                 <p>Busca por nome: </p>
-                <input type="text" value={this.state.inputBuscaNome.value} onChange={''}/>
+                <input type="text" value={this.state.inputBuscaNome} onChange={this.onChangeFilter}/>
 
 
             </ContainerFiltro>

@@ -1,20 +1,22 @@
 import React from 'react';
 import './App.css';
-import Filtro from './components/filtro';
+import {Filtro} from './components/filtro';
 
 
 
 
-class App extends React.Component{
+class App extends React.Component() {
   render(){
     return(
      
       <div>
-      <Filtro />
+        <h1>dale</h1>
+      <Filtro/>
       
       
     
-
+      
+      
       </div>
 
 
