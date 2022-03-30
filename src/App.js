@@ -1,19 +1,21 @@
 import React from 'react';
 import './App.css';
+import Carrinhodecompra from './components/carrinho-de-compra';
+import styled from "styled-components"
 import Filtro from './components/filtro';
 
 
-
-
 class App extends React.Component{
-  render(){
+
+
+  render() {
     return(
      
       <div>
-      <Filtro />
+       <Filtro />
+      <Carrinhodecompra/>
+     
       
-      
-    
 
       </div>
 
@@ -24,3 +26,4 @@ class App extends React.Component{
 }
 
 export default App
+
