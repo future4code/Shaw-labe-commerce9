@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Produtos from './components/produtos';
 
-export default class LabECommerce extends React.Component() {
+class App extends React.Component {
   render(){
     return(
      
       <>
-      
+      <Produtos/>
       
       
     
@@ -20,3 +21,4 @@ export default class LabECommerce extends React.Component() {
  
 }
 
+export default App
