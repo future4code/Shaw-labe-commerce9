@@ -171,12 +171,10 @@ class App extends React.Component {
     //LOGICAS DOS FILTOS MIN/MAX E NOME
 
 
-    const buscarValorMin = [...this.state.produtos]
-    buscarValorMin.filter((produto) => {
+    const buscarValorMin = listagemDeProdutos.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
-    const buscarValorMax = [...this.state.produtos]
-    buscarValorMax.filter((produto) => {
+    const buscarValorMax = listagemDeProdutos.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
     /*   
@@ -193,7 +191,7 @@ class App extends React.Component {
         <Filtro
         
         />
-      
+        {buscarValorMax}
         <MainContainer>
           <header>
             {qtdeDeArray}

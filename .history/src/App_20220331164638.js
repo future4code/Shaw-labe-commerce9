@@ -93,25 +93,25 @@ class App extends React.Component {
   };
 
 
-
+   
   onChangeFilterMin = (event) => {
     this.setState({
-      inputValorMin: event.target.value
-
+        inputValorMin: event.target.value
+      
     })
-  }
-  onChangeFilterMax = (event) => {
+}
+onChangeFilterMax = (event) => {
     this.setState({
-      inputValorMax: event.target.value
-
+        inputValorMax: event.target.value
+      
     })
-  }
-  onChangeBuscaNome = (event) => {
+}
+onChangeBuscaNome = (event) => {
     this.setState({
-      inputBuscaNome: event.target.value
-
+        inputBuscaNome: event.target.value
+      
     })
-  }
+}
 
 
   render() {
@@ -170,30 +170,33 @@ class App extends React.Component {
 
     //LOGICAS DOS FILTOS MIN/MAX E NOME
 
+  
 
-    const buscarValorMin = [...this.state.produtos]
-    buscarValorMin.filter((produto) => {
-      return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
+
+    const buscarValorMin = listagemDeProdutos.filter((produto) => {
+      return this.props.inputValorMin === "" || produto.value >= this.props.inputValorMin
     })
-    const buscarValorMax = [...this.state.produtos]
-    buscarValorMax.filter((produto) => {
-      return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
+    const buscarValorMax = listagemDeProdutos.filter((produto) => {
+      return this.props.inputValorMin === "" || produto.value >= this.props.inputValorMin
     })
-    /*   
     const buscarPorNome = listagemDeProdutos.filter((produto) => {
-  
-        return produto.name.toLowerCase().includes(this.state.inputBuscaNome.toLowerCase())
-  
-      })
-   
-   */
+
+      return produto.name.toLowerCase().includes(this.state.inputBuscaNome.tolowercase())
+
+    })
+
+
     return (
 
       <div>
         <Filtro
-        
+          inputValorMin={this.state.inputValorMin}
+          inputValorMax={this.state.inputValorMax}
+          inputBuscaNome={this.state.inputBuscaNome}
+          onChangeValorMin={this.onChangeValorMin}
+          onChangeValorMax={this.onChangeValorMax}
+          onChangeBuscaNome={this.onChangeBuscaNome}
         />
-      
         <MainContainer>
           <header>
             {qtdeDeArray}

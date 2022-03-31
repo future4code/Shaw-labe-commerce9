@@ -176,7 +176,7 @@ class App extends React.Component {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
     const buscarValorMax = [...this.state.produtos]
-    buscarValorMax.filter((produto) => {
+    listagemDeProdutos.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
     /*   
@@ -193,7 +193,8 @@ class App extends React.Component {
         <Filtro
         
         />
-      
+        {buscarValorMax}
+        {buscarValorMin}
         <MainContainer>
           <header>
             {qtdeDeArray}

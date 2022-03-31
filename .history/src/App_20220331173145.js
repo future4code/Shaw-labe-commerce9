@@ -155,7 +155,9 @@ class App extends React.Component {
             (primeiroProduto.value - segundoProduto.value)
           );
       }
-    });
+    })
+    .filter((produto) => {
+      return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin});
 
     const listagemDeProdutos = copiaDosProdutos.map((produto) => {
       return (
@@ -166,15 +168,18 @@ class App extends React.Component {
           <button>Adicionar ao Carrinho</button>
         </Produto>
       );
+      return(
+        
+      )
     });
 
     //LOGICAS DOS FILTOS MIN/MAX E NOME
 
 
-    const buscarValorMin = [...this.state.produtos]
+    /* const buscarValorMin = [...this.state.produtos]
     buscarValorMin.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
-    })
+    }) */
     const buscarValorMax = [...this.state.produtos]
     buscarValorMax.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
