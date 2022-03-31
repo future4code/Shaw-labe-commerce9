@@ -52,7 +52,6 @@ export default class Filtro extends React.Component {
 
 
     render() {
-
         return (
 
             <ContainerFiltro>
