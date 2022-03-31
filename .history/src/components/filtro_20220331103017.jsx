@@ -44,7 +44,7 @@ export default class Filtro extends React.Component {
     }
     upDateQuery = (event) => {
         this.setState({
-            inputBuscaNome: event.target.value
+            inputValorBuscaNome: event.target.value
           
         })
     }
@@ -64,7 +64,7 @@ export default class Filtro extends React.Component {
                 <input  value={this.state.inputValorMax} onChange={this.onChangeFilterMax}/>
                 <p>Busca por nome: </p>
                 <input value={this.state.inputBuscaNome} onChange={this.upDateQuery}/>
-                
+                {console.log}({this.state.inputBuscaNome})
 
 
             </ContainerFiltro>

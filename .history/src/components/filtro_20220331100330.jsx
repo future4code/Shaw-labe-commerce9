@@ -42,9 +42,9 @@ export default class Filtro extends React.Component {
           
         })
     }
-    upDateQuery = (event) => {
+    onChangeFilterBuscaNome = (event) => {
         this.setState({
-            inputBuscaNome: event.target.value
+            inputValorBuscaNome: event.target.value
           
         })
     }
@@ -59,12 +59,11 @@ export default class Filtro extends React.Component {
 
                 <h2>Filtros</h2>
                 <p>Valor mínimo: </p>
-                <input value={this.state.inputValorMin} onChange={this.onChangeFilterMin}/>
+                <input type="number" value={this.state.inputValorMin.value} onChange={''}/>
                 <p>Valor Máximo: </p>
-                <input  value={this.state.inputValorMax} onChange={this.onChangeFilterMax}/>
+                <input type="number" value={this.state.inputValorMax.value} onChange={''}/>
                 <p>Busca por nome: </p>
-                <input value={this.state.inputBuscaNome} onChange={this.upDateQuery}/>
-                
+                <input type="text" value={this.state.inputBuscaNome.value} onChange={''}/>
 
 
             </ContainerFiltro>
