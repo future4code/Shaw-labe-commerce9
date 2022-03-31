@@ -193,7 +193,8 @@ class App extends React.Component {
         <Filtro
         
         />
-      
+        {buscarValorMax}
+        {buscarValorMin}
         <MainContainer>
           <header>
             {qtdeDeArray}

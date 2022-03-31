@@ -171,16 +171,13 @@ class App extends React.Component {
     //LOGICAS DOS FILTOS MIN/MAX E NOME
 
 
-    const buscarValorMin = [...this.state.produtos]
-    buscarValorMin.filter((produto) => {
+    const buscarValorMin = listagemDeProdutos.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
-    const buscarValorMax = [...this.state.produtos]
-    buscarValorMax.filter((produto) => {
+    const buscarValorMax = listagemDeProdutos.filter((produto) => {
       return this.state.inputValorMin === "" || produto.value >= this.state.inputValorMin
     })
-    /*   
-    const buscarPorNome = listagemDeProdutos.filter((produto) => {
+    /*   const buscarPorNome = listagemDeProdutos.filter((produto) => {
   
         return produto.name.toLowerCase().includes(this.state.inputBuscaNome.toLowerCase())
   
@@ -190,10 +187,21 @@ class App extends React.Component {
     return (
 
       <div>
-        <Filtro
-        
+        {/* <Filtro
+          inputValorMin={this.state.inputValorMin}
+          onChangeValorMin={this.onChangeFilterMin}
         />
-      
+        <Filtro
+          inputValorMax={this.state.inputValorMax}
+          onChangeValorMax={this.onChangeFilterMax}
+        /> */}
+       {/*  <Filtro
+          inputBuscaNome={this.state.inputBuscaNome}
+          onChangeBuscaNome={this.onChangeBuscaNome}
+        /> */}
+        <Filtro
+        />
+
         <MainContainer>
           <header>
             {qtdeDeArray}
