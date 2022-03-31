@@ -44,7 +44,7 @@ export default class Filtro extends React.Component {
     }
     upDateQuery = (event) => {
         this.setState({
-            inputBuscaNome: event.target.value
+            inputValorBuscaNome: event.target.value
           
         })
     }

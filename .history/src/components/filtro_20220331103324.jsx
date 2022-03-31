@@ -61,9 +61,9 @@ export default class Filtro extends React.Component {
                 <p>Valor mínimo: </p>
                 <input value={this.state.inputValorMin} onChange={this.onChangeFilterMin}/>
                 <p>Valor Máximo: </p>
-                <input  value={this.state.inputValorMax} onChange={this.onChangeFilterMax}/>
+                <input  value={this.state.inputValorMax} onChange={this.onChangeFilterMax}/>{this.state.inputValorMax}
                 <p>Busca por nome: </p>
-                <input value={this.state.inputBuscaNome} onChange={this.upDateQuery}/>
+                <input value={this.state.inputBuscaNome} onChange={this.upDateQuery}/>{this.state.inputBuscaNome}
                 
 
 
