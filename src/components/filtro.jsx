@@ -11,6 +11,7 @@ width: 20%;
 border: 0.3px solid black;
 height:700px;
 align-items: center;
+flex-shrink: 0;
 
 input{
     width: 200px;
@@ -37,9 +38,9 @@ export default class Filtro extends React.Component {
                 <p>Valor mínimo: </p>
                 <input type="number" value={this.props.inputValorMin} onChange={this.props.onChangeFilterMin} placeholder="Valor Minimo"/>
                 <p>Valor Máximo: </p>
-                <input type="number"  value={this.props.inputValorMax} onChange={this.props.onChangeFilterMax}/>
+                <input type="number"  value={this.props.inputValorMax} onChange={this.props.onChangeFilterMax} placeholder="Valor Máximo"/>
                 <p>Busca por nome: </p>
-                <input value={this.props.inputBuscaNome} onChange={this.props.onChangeBuscaNome}/>
+                <input value={this.props.inputBuscaNome} onChange={this.props.onChangeBuscaNome} placeholder="Nome do Produto"/>
                 
 
 
