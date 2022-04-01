@@ -7,13 +7,13 @@ const AppContainer = styled.div`
   height: 100vh;
   box-sizing: border-box;
   width: 30%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-shrink: 0;
+  text-align: center;
 
 `
-
 
 export default class Carrinhodecompra extends React.Component {
 
@@ -25,7 +25,16 @@ export default class Carrinhodecompra extends React.Component {
         
         <h1>Carrinho:</h1>
         
-        <p>valor total: #ndajflkdan</p>
+        {this.props.carrinho.map((produto) => {
+          return (
+            <div>
+              {produto.quantidadeDeProduto}
+              {produto.nomeDoProduto}
+              <button onClick={produto.removerItem}>Remover</button>
+            </div>
+          )
+        })}
+        <p>Valor total: R$ {this.props.valorTotal}</p>
 
         
         </AppContainer>
