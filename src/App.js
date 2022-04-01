@@ -15,8 +15,8 @@ class App extends React.Component {
   state = {
     carrinho: [
       {
-        quantidadeDeProduto: 1,
-        nomeDoProduto: "Blobers",
+        quantidadeDeProduto: 0,
+        nomeDoProduto: "",
       }
     ],
 
@@ -64,13 +64,13 @@ class App extends React.Component {
     inputValorMin: '',
     inputValorMax: '',
     inputBuscaNome: '',
-    valorTotal: 100,
+    valorTotal: 0,
   };
 
   adicionaProCarrinho = (produto) => {
     const existeNoCarrinho = this.state.carrinho.find(elemento => elemento.id === produto.id);
     if(existeNoCarrinho){
-      
+
     }else{
       const objetoParaCarrinho = 
       {
