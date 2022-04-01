@@ -5,6 +5,8 @@ import styled from "styled-components"
 import Filtro from './components/filtro';
 import Produtos from './components/produtos';
 
+
+
 const MainContainer = styled.div`
   display: flex;
   align-items: flex-start;
@@ -25,7 +27,7 @@ class App extends React.Component {
         id: 1,
         name: "Aome do Produto",
         value: 10000.0, //valor do produto
-        imagem: "https://picsum.photos/400/400?a",
+        imagem:"https://picsum.photos/400/400?j",
       },
       {
         id: 2,
