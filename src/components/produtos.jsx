@@ -7,19 +7,63 @@ const Produto = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 15px;
-  border: solid 1px black;
-  padding-bottom: 15px;
+  
+  border-radius: 5px;
+
+  transition: 0.2s;
+
+  &:hover{
+    box-shadow: 5px 5px 3px #50D47B;
+    border: solid 1px #50D47B;
+    cursor: pointer;
+  }
+
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+
+      margin-top: -2px;
+    }
+
+    p {
+      margin-top: -10px;
+    }
+
+    button {
+      margin-bottom: 10px;
+
+      width: 180px;
+      height: 30px;
+
+      background-color: #50D47B;
+      color: white;
+
+      border: 1px solid #50D47B;
+      border-radius: 20px;
+    }
+
+    .descProduct{
+      border: solid 1px #6B6B6B;
+      width: 298px ;
+    }
+
 `;
+
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow-y: scroll;
+  height: 100vh;
+
+  background-color: #F3F2EF;
 `;
 
 const Imagem = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 300px;
+
+  border-radius: 5px 5px 0px 0px;
+
 `;
 
 const Corpo = styled.div`
@@ -33,13 +77,25 @@ const Cabecalho = styled.header`
     display: flex;
     justify-content: space-around;
     padding: 15px;
+
+    select {
+      margin: 5px;
+    }
+
+    label {
+      font-weight: 700;
+    }
+
+    .title {
+      font-weight: 700;
+    }
 `
 
 class Produtos extends React.Component {
 
   render() {
     const qtdeDeArray = (
-      <div>Quantidade de Produtos: {this.props.produtoFiltrado.length}</div>
+      <div className="title"> Quantidade de Produtos: {this.props.produtoFiltrado.length}</div>
     );
 
     const ordenandoProduto = (
@@ -69,12 +125,15 @@ class Produtos extends React.Component {
       return (
         <Produto>
           <Imagem src={produto.imagem} />
-          <p>{produto.name}</p>
-          <p>R$: {produto.value}</p>
-          <button onClick={() => this.props.adicionaProCarrinho(produto)}>Adicionar ao Carrinho</button>
+          <div className="descProduct">
+            <p className="name">{produto.name}</p>
+            <p>R$: {produto.value}</p>
+            <button onClick={() => this.props.adicionaProCarrinho(produto)}>Adicionar ao Carrinho</button>
+          </div>
         </Produto>
       );
     });
+
     return (
       <MainContainer>
         <Cabecalho>

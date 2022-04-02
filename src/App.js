@@ -5,6 +5,8 @@ import styled from "styled-components"
 import Filtro from './components/filtro';
 import Produtos from './components/produtos';
 
+import teste from './fotos/imagem1-nave1.jpg'
+
 const MainContainer = styled.div`
   display: flex;
   align-items: flex-start;
@@ -31,7 +33,7 @@ class App extends React.Component {
         id: 2,
         name: "Bome do Produto 2",
         value: 50.0, //valor do produto
-        imagem: "https://picsum.photos/400/400?b",
+        imagem: teste,
       },
       {
         id: 3,
@@ -106,8 +108,6 @@ class App extends React.Component {
     });
   };
 
-
-
   onChangeFilterMin = (event) => {
     this.setState({
       inputValorMin: event.target.value
@@ -178,6 +178,7 @@ class App extends React.Component {
           valorTotal={this.state.valorTotal}
           carrinho={this.state.carrinho}
         />
+
       </MainContainer>
 
 
