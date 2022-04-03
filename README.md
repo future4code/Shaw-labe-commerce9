@@ -5,7 +5,7 @@ Todos os inputs/select de pesquisa e filtro.
 - que não funciona?
 Botão remover
 
--ink Surge
+-Link do Surge
 http://hard-to-find-sheet.surge.sh/
 
 Imagens
