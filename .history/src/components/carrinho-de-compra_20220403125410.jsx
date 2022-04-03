@@ -32,9 +32,7 @@ const AppContainer = styled.div`
     }
     &:active{
       background-color: hsl(248deg 40% 59%);
-    }
-`
-
+    };`
 
 
 const Title = styled.div`

@@ -61,20 +61,20 @@ class App extends React.Component {
       },
       {
         id: 6,
-        name: "Enterprise",
+        name: "Fome do Produto 6",
         value: 2500.0, //valor do produto
         imagem: nave6,
       },
       {
         id: 7,
-        name: "Jupiter 2",
-        value: 3200.0, //valor do produto
+        name: "Fome do Produto 6",
+        value: 2500.0, //valor do produto
         imagem: nave7,
       },
       {
         id: 8,
-        name: "Serenety",
-        value: 5525.0, //valor do produto
+        name: "Fome do Produto 6",
+        value: 2500.0, //valor do produto
         imagem: nave8,
       },
     ],

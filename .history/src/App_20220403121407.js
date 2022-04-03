@@ -43,38 +43,38 @@ class App extends React.Component {
       },
       {
         id: 3,
-        name: "Planet Express",
+        name: "Come do Produto 3",
         value: 120.0, //valor do produto
         imagem: nave3,
       },
       {
         id: 4,
-        name: "Galactica",
+        name: "Dome do Produto 4",
         value: 300.0, //valor do produto
         imagem: nave4,
       },
       {
         id: 5,
-        name: "Millennium Falcon",
+        name: "Eome do Produto 5",
         value: 1000.0, //valor do produto
         imagem: nave5,
       },
       {
         id: 6,
-        name: "Enterprise",
+        name: "Fome do Produto 6",
         value: 2500.0, //valor do produto
         imagem: nave6,
       },
       {
         id: 7,
-        name: "Jupiter 2",
-        value: 3200.0, //valor do produto
+        name: "Fome do Produto 6",
+        value: 2500.0, //valor do produto
         imagem: nave7,
       },
       {
         id: 8,
-        name: "Serenety",
-        value: 5525.0, //valor do produto
+        name: "Fome do Produto 6",
+        value: 2500.0, //valor do produto
         imagem: nave8,
       },
     ],

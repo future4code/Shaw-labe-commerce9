@@ -61,7 +61,7 @@ export default class Filtro extends React.Component {
                     <p><FaFilter /></p>
                 </Title>
                 <p>Valor mínimo: </p>
-                <input type="number" value={this.props.inputValorMin} onChange={this.props.onChangeFilterMin} placeholder="Valor Mínimo" />
+                <input type="number" value={this.props.inputValorMin} onChange={this.props.onChangeFilterMin} placeholder="Valor Minimo" />
                 <p>Valor Máximo: </p>
                 <input type="number" value={this.props.inputValorMax} onChange={this.props.onChangeFilterMax} placeholder="Valor Máximo" />
                 <p>Busca por nome: </p>

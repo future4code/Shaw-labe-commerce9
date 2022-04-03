@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { FaCartPlus } from "react-icons/fa"
 
 const AppContainer = styled.div`
-  color:white;
+  border: 1px solid black;
   height: 100vh;
   box-sizing: border-box;
   width: 20%;
@@ -15,7 +15,7 @@ const AppContainer = styled.div`
   height: 100vh;
   background-color: hsl(248deg 40% 8%);
    h2 {
-    color: white;
+    color: #DEDFDA;
     align-items: center ;
     margin-top: 120px;
    }
@@ -32,9 +32,7 @@ const AppContainer = styled.div`
     }
     &:active{
       background-color: hsl(248deg 40% 59%);
-    }
-`
-
+    };`
 
 
 const Title = styled.div`
@@ -45,7 +43,7 @@ const Title = styled.div`
     font-size: 20px;
     margin-top: 125px;
     margin-left: 5px;
-    color: white;
+    color: #DEDFDA;
   }
 
 `

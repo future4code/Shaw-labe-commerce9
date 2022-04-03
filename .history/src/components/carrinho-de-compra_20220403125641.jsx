@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { FaCartPlus } from "react-icons/fa"
 
 const AppContainer = styled.div`
-  color:white;
+color:white;
   height: 100vh;
   box-sizing: border-box;
   width: 20%;

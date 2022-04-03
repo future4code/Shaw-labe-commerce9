@@ -68,13 +68,13 @@ class App extends React.Component {
       {
         id: 7,
         name: "Jupiter 2",
-        value: 3200.0, //valor do produto
+        value: 2500.0, //valor do produto
         imagem: nave7,
       },
       {
         id: 8,
         name: "Serenety",
-        value: 5525.0, //valor do produto
+        value: 2500.0, //valor do produto
         imagem: nave8,
       },
     ],
