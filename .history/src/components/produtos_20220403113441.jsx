@@ -13,9 +13,8 @@ const Produto = styled.div`
   border: solid 0.5px hsl(248deg 40% 32%);
   padding-bottom: 15px;
   transition:0.2s;
-  margin-bottom:30px;
   &:hover{
-    box-shadow: 0 0 2em hsl(248deg 40% 32%);
+    box-shadow: 0 0 1em hsl(248deg 40% 32%);
   }
   button{
     height: 30px;
@@ -34,11 +33,10 @@ const Produto = styled.div`
   }
   img{
     width: 300px;
-    height: 300px;
   }
 `;
 const MainContainer = styled.div`
-  background-color: hsl(248deg 40% 8%);
+  background-color: ;
   display: flex;
   flex-direction: column;
   flex-grow: 1;

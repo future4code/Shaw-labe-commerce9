@@ -23,9 +23,10 @@ input{
     border: 0.3px;
     text-align: center;
     box-shadow: 5px 5px 3px #16122b;
-        &:focus{
-            box-shadow: 0 0 2em hsl(248deg 40% 32%);
-        }
+    &:active{
+        box-shadow: 0 0 1em hsl(248deg 40% 32%);
+
+    }
 }
 h2 {
     margin-top: 120px;
@@ -61,7 +62,7 @@ export default class Filtro extends React.Component {
                     <p><FaFilter /></p>
                 </Title>
                 <p>Valor mínimo: </p>
-                <input type="number" value={this.props.inputValorMin} onChange={this.props.onChangeFilterMin} placeholder="Valor Mínimo" />
+                <input type="number" value={this.props.inputValorMin} onChange={this.props.onChangeFilterMin} placeholder="Valor Minimo" />
                 <p>Valor Máximo: </p>
                 <input type="number" value={this.props.inputValorMax} onChange={this.props.onChangeFilterMax} placeholder="Valor Máximo" />
                 <p>Busca por nome: </p>

@@ -4,14 +4,8 @@ import Carrinhodecompra from './components/carrinho-de-compra';
 import styled from "styled-components"
 import Filtro from './components/filtro';
 import Produtos from './components/produtos';
-import nave1 from './imagens/nave1.jpg';
-import nave2 from './imagens/nave2.jpg';
-import nave3 from './imagens/nave3.jpg';
-import nave4 from './imagens/nave4.jpg';
-import nave5 from './imagens/nave5.jpg';
-import nave6 from './imagens/nave6.jpg';
-import nave7 from './imagens/nave7.jpg';
-import nave8 from './imagens/nave8.jpg';
+import { nave } from './imagens/nave6.jpg'
+
 
 const MainContainer = styled.div`
   display: flex;
@@ -31,51 +25,39 @@ class App extends React.Component {
     produtos: [
       {
         id: 1,
-        name: "Coração de Ouro",
+        name: "Aome do Produto",
         value: 10000.0, //valor do produto
-        imagem: nave1,
+        imagem: teste,
       },
       {
         id: 2,
-        name: "Tardis",
+        name: "Bome do Produto 2",
         value: 50.0, //valor do produto
         imagem: nave2,
       },
       {
         id: 3,
-        name: "Planet Express",
+        name: "Come do Produto 3",
         value: 120.0, //valor do produto
-        imagem: nave3,
+        imagem: nave ,
       },
       {
         id: 4,
-        name: "Galactica",
+        name: "Dome do Produto 4",
         value: 300.0, //valor do produto
-        imagem: nave4,
+        imagem: "https://picsum.photos/400/400?d",
       },
       {
         id: 5,
-        name: "Millennium Falcon",
+        name: "Eome do Produto 5",
         value: 1000.0, //valor do produto
-        imagem: nave5,
+        imagem: "https://picsum.photos/400/400?e",
       },
       {
         id: 6,
-        name: "Enterprise",
+        name: "Fome do Produto 6",
         value: 2500.0, //valor do produto
-        imagem: nave6,
-      },
-      {
-        id: 7,
-        name: "Jupiter 2",
-        value: 3200.0, //valor do produto
-        imagem: nave7,
-      },
-      {
-        id: 8,
-        name: "Serenety",
-        value: 5525.0, //valor do produto
-        imagem: nave8,
+        imagem: "https://picsum.photos/400/400?f",
       },
     ],
 

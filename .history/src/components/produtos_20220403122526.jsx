@@ -15,7 +15,7 @@ const Produto = styled.div`
   transition:0.2s;
   margin-bottom:30px;
   &:hover{
-    box-shadow: 0 0 2em hsl(248deg 40% 32%);
+    box-shadow: 0 0 1em hsl(248deg 40% 32%);
   }
   button{
     height: 30px;
